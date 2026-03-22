@@ -1,5 +1,5 @@
 // src/components/SkillsSection.jsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaPython, FaJava, FaHtml5, FaCss3Alt, FaGithub } from 'react-icons/fa';
 import { Database, Hash, Table, LineChart, PieChart, Cpu, BarChart2, FileSpreadsheet, Presentation, Brain, Clock, MessageCircle, Users, RefreshCw, Code, Terminal } from 'lucide-react';

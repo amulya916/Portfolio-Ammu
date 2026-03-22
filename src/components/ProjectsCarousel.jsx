@@ -1,5 +1,5 @@
 // src/components/ProjectsCarousel.jsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
 import { Trophy, ChevronLeft, ChevronRight } from 'lucide-react';

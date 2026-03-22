@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { Home, User, Code, Briefcase, BookOpen, Star, Award, Mail, GraduationCap } from 'lucide-react';
 import { useActiveSection } from '../hooks/useActiveSection';
 
@@ -16,7 +16,8 @@ const navLinks = [
 
 export default function Navbar() {
   const [mounted, setMounted] = useState(false);
-  const { activeSection, setActiveSection } = useActiveSection(navLinks.map(l => l.id));
+  const sectionIds = useMemo(() => navLinks.map(l => l.id), []);
+  const { activeSection, setActiveSection } = useActiveSection(sectionIds);
 
   useEffect(() => {
     setMounted(true);

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useCallback, useMemo } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence, useMotionValue, useSpring } from 'framer-motion';
 import { CheckCircle, RotateCcw } from 'lucide-react';
@@ -151,7 +151,7 @@ export default function Landing() {
               </h1>
               <p className="text-gray-500 text-sm mt-2 font-medium max-w-md mx-auto leading-relaxed">
                 Data Analysts detect outliers in the wild.<br />
-                <span className="text-gray-400">Find the one value that doesn't belong — click it to enter.</span>
+                <span className="text-gray-400">Find the one value that doesn&apos;t belong — click it to enter.</span>
               </p>
             </motion.div>
 
@@ -212,7 +212,7 @@ export default function Landing() {
               {status === 'wrong' && (
                 <motion.div key="wrong" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
                   className="text-red-400 text-sm font-semibold">
-                  ✗ That's a normal value. Keep scanning…
+                  &times; That&apos;s a normal value. Keep scanning…
                 </motion.div>
               )}
               {status === 'idle' && (

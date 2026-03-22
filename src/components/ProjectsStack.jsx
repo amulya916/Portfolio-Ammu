@@ -1,48 +1,11 @@
 // src/components/ProjectsStack.jsx
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
 import { Trophy } from 'lucide-react';
 
-const PROJECTS_DATA = [
-  {
-    id: 0,
-    title: 'Paddy Yield Prediction',
-    category: 'Machine Learning',
-    color: '#c6ff00',
-    colorClass: 'bg-[#c6ff00]',
-    textColorClass: 'text-[#c6ff00]',
-    shadowClass: 'shadow-[0_0_10px_rgba(198,255,0,0.4)]',
-    desc: 'Built an ML model (Random Forest, Regressors) to predict yield and classify agricultural factors achieving ~86% accuracy.',
-    tags: ['NumPy', 'Pandas', 'Scikit-Learn', 'Git'],
-    image: '/paddy_yield.png',
-  },
-  {
-    id: 1,
-    title: 'GHG Emissions',
-    category: 'Power BI',
-    color: '#22d3ee',
-    colorClass: 'bg-cyan-400',
-    textColorClass: 'text-cyan-300',
-    shadowClass: 'shadow-[0_0_10px_rgba(34,211,238,0.4)]',
-    desc: 'Power Query cleaning & DAX measures tracking dominant global greenhouse gas sources.',
-    tags: ['Power BI', 'Git'],
-    image: '/ghg_emissions.png',
-  },
-  {
-    id: 2,
-    title: 'EV Exploratory Analysis',
-    category: 'Data Analysis',
-    color: '#a855f7',
-    colorClass: 'bg-purple-500',
-    textColorClass: 'text-purple-400',
-    shadowClass: 'shadow-[0_0_15px_rgba(168,85,247,0.5)]',
-    desc: 'Conducted exhaustive EDA on EV populations to uncover real-world adoption trends. Pre-processed datasets handling nulls and outliers, and derived actionable visual insights.',
-    tags: ['Python', 'Pandas', 'Matplotlib', 'Seaborn'],
-    image: '/ev_analysis.png',
-    date: 'Apr 2025'
-  }
-];
+import { PROJECTS_DATA } from '../data/projects';
+
 
 const StickyCard = ({ project, index, totalCards, progress }) => {
   const isLast = index === totalCards - 1;

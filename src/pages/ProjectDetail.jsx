@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { PROJECTS_DATA } from '../data/projects';
 import { motion } from 'framer-motion';

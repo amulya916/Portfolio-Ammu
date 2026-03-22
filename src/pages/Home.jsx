@@ -1,12 +1,11 @@
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import Navbar from '../components/Navbar';
 import SkillsSection from '../components/SkillsSection';
 import ProjectsCarousel from '../components/ProjectsCarousel';
-import CustomCursor from '../components/CustomCursor';
 import AnimatedBackground from '../components/AnimatedBackground';
 import {
   ArrowUpRight, Github, Linkedin, Mail, GraduationCap,
-  Code, BookOpen, Terminal, User, FileText, Download, Trophy, Star, Phone, X
+  BookOpen, User, FileText, Download, Trophy, Star, Phone, X
 } from 'lucide-react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
@@ -118,7 +117,7 @@ function Home() {
           </Tilt>
 
           <motion.h1 variants={fadeInUp} className="text-6xl md:text-8xl font-black tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#c6ff00] via-white to-[#818cf8] drop-shadow-[0_0_20px_rgba(198,255,0,0.2)]">
-            Hi, I'm <br className="md:hidden" />Amulya Putta
+            Hi, I&apos;m <br className="md:hidden" />Amulya Putta
           </motion.h1>
           <motion.p variants={fadeInUp} className="text-xl md:text-2xl text-gray-400 max-w-2xl font-light mb-8">
             <span className="text-[#c6ff00] font-medium">Data Analyst</span> & <span className="text-[#818cf8] font-medium">Software Developer</span>.<br className="hidden md:block" /> I transform complex data into <span className="text-white font-medium italic">actionable insights</span> and robust applications.
@@ -182,7 +181,7 @@ function Home() {
             <Tilt tiltMaxAngleX={4} tiltMaxAngleY={4} glareEnable={true} glareMaxOpacity={0.08} glarePosition="all" className="glass-card rounded-[32px] p-8 md:p-12 flex flex-col justify-center border border-white/10 hover:border-white/30 transition-colors duration-500 shadow-2xl flex-1">
               <div className="space-y-6">
                 <p className="text-gray-300 text-lg md:text-xl leading-relaxed font-light">
-                  I'm <span className="text-white font-semibold">Amulya Putta</span>, an aspiring Data Engineer and Software Developer currently pursuing my B.Tech in Computer Science at Lovely Professional University (CGPA: 8.17).
+                  I&apos;m <span className="text-white font-semibold">Amulya Putta</span>, an aspiring Data Engineer and Software Developer currently pursuing my B.Tech in Computer Science at Lovely Professional University (CGPA: 8.17).
                 </p>
                 <p className="text-gray-400 text-base md:text-lg leading-relaxed font-light">
                   My passion lies at the intersection of <span className="text-[#c6ff00] font-medium">data science</span> and <span className="text-[#c6ff00] font-medium">software engineering</span> — turning raw, complex datasets into clear, actionable insights that drive smarter decisions. From predicting paddy yields using machine learning to analyzing greenhouse gas emissions with Power BI, I love building solutions that answer real-world questions.
@@ -191,7 +190,7 @@ function Home() {
                   Beyond data, I bring strong programming foundations in <span className="text-white font-medium">Python and Java</span>, with hands-on experience in EDA, visualization, classification models, and interactive dashboards. I enjoy tackling structured problems with creative thinking and clean code.
                 </p>
                 <p className="text-gray-400 text-base md:text-lg leading-relaxed font-light">
-                  When I'm not writing code, I'm sharpening my competitive edge — earning a <span className="text-yellow-400 font-medium">Gold Badge in Java</span> on HackerRank, participating in hackathons, and continuously exploring new tools in the data ecosystem. I believe every dataset has a story waiting to be told.
+                  When I&apos;m not writing code, I&apos;m sharpening my competitive edge — earning a <span className="text-yellow-400 font-medium">Gold Badge in Java</span> on HackerRank, participating in hackathons, and continuously exploring new tools in the data ecosystem. I believe every dataset has a story waiting to be told.
                 </p>
               </div>
             </Tilt>
@@ -468,7 +467,7 @@ function Home() {
           initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}
           className="text-5xl md:text-7xl font-black mb-24 tracking-tighter uppercase text-center w-full text-[#a4cc00] drop-shadow-sm"
         >
-          Let's Connect
+          Let&apos;s Connect
         </motion.h2>
 
         <div className="w-full max-w-5xl flex flex-col md:flex-row justify-center items-center gap-12 md:gap-40 mb-32">
